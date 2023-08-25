@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript stuff</title>
+</head>
+<body>
+    <script>
+        // string methods
+        var str = "  SDNANSDMANWA12818841     ";
+        console.log(str.length); // string length
+        console.log(str.slice(7, 13)); // string slice
+        console.log(str.substring(7, 13)); // string substring
+        console.log(str.substr(7, 6)); // string substr
+        console.log(str.trim()); // string trim
+        
+        // number methods
+        var num = "123.456";
+        var numParsed = Number(num); // convert numeric string to number
+        console.log(numParsed);
+        console.log(numParsed.toFixed(2)); // fixed 2 decimal places
+        console.log(Number.isInteger(numParsed)); // checks for integer
+        console.log(Number.parseFloat(num)); // parse float from string
+        
+        // array methods
+        var array = ['first', 'second', 'third'];
+        console.log(array.length); // array length
+        array.push('fourth'); // array push
+        console.log(array.pop()); // array pop
+        array.unshift('zero'); // array unshift
+        console.log(array.shift()); // array shift
+        
+        // date methods
+        var date = new Date();
+        console.log(date); // new date
+        console.log(date.toString()); // displaying dates
+        console.log(date.getMonth()); // get month
+        console.log(date.getDate()); // get day of the month
+        console.log(date.getFullYear()); // get year
+    
+        // function methods
+        function add(a, b) {
+            return a + b; // function return
+        }
+        var result = add(3, 4); // function syntax
+        var localVar = "Local Variable"; // local variable
+        console.log(result, localVar);
+    </script>
+</body>
+</html>
